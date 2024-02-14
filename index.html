@@ -6,6 +6,7 @@
         <meta name="description" content="En webbsida med bilder som alla har samma bildformat och upplösning"> <!--Description of what the webbsite is (for if it dosen't load)-->
         <title>tv_serie</title> <!--title for the webbsite-->
         <link rel="stylesheet" href="styles.css"> <!--tells the computer using the webbsite where it can find the css-->
+        <script src="script.js"></script>
     </head>
     <body>
         <header>
@@ -15,8 +16,10 @@
         </header>
         <div class="bilder">
         <div class="kort"> <!--proportioner 16:9 bredd 750-->
+            <button id="knapp1" onclick="byttillbild1()">Byt bilden till ett får</button>
+            <button id="knapp2" onclick="byttilllogga()">Byt bilden till berg</button>
             <p>En bild på Italienska berg</p>
-            <img src="marek-piwnicki-italianmountains-unsplash.jpg" alt="Snötäckta berg i Italien">
+            <img src="marek-piwnicki-italianmountains-unsplash.jpg" alt="Snötäckta berg i Italien" id="berg">
             <p>Skapare av bilden: Marek Piwnicki</p>
         </div>
         <div class="kort"> <!--proportioner 16:9-->
@@ -36,6 +39,9 @@
         </div>
         </div>
         <footer>
-            <p>Mer kommer <u>inte</u> snart...</p>
+            <p>
+                Mer kommer <u>inte</u> snart...
+            </p>
         </footer>
+
     </body>
